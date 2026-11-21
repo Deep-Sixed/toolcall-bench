@@ -1,0 +1,15 @@
+{
+  "name": "toolcall-bench",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local llama-server tool-calling benchmark using OpenRouter's toolcall_formats cases",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "bench": "node --disable-warning=ExperimentalWarning bench.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --test test/suite.test.mjs"
+  },
+  "license": "Apache-2.0"
+}

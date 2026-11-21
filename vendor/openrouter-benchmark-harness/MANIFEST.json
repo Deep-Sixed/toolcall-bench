@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+  "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "source": "src/internal/guards.ts",
+      "destination": "internal/guards.ts",
+      "upstream_sha256": "2f8560f42b1a6069ace0e4c503b2627fe9190d63fc8818cfda2aa55c33aa153e",
+      "vendored_sha256": "2f8560f42b1a6069ace0e4c503b2627fe9190d63fc8818cfda2aa55c33aa153e",
+      "change": "none"
+    },
+    {
+      "source": "src/benchmarks/toolcall-formats/json-schema.ts",
+      "destination": "toolcall-formats/json-schema.ts",
+      "upstream_sha256": "cdfed6332cbc7dd9a409154b3636964ac7622f4adb39ce2d3c7b3c0ee5048545",
+      "vendored_sha256": "56f41c1c0369ee65409da3c92b09c01a859fe52e46e5a85e2432e3d1bcf44f1f",
+      "change": "import paths only"
+    },
+    {
+      "source": "src/benchmarks/toolcall-formats/cases.ts",
+      "destination": "toolcall-formats/cases.ts",
+      "upstream_sha256": "9c19aa38ad6d49da8e3200a74aaa6668facdabc3102f492c20e72312bd36bfd7",
+      "vendored_sha256": "cda065fb0fad893e8653776b52ace757943a41231a227e6e13f35928aca3b765",
+      "change": "import paths only"
+    },
+    {
+      "source": "src/benchmarks/toolcall-formats/scorer.ts",
+      "destination": "toolcall-formats/scorer.ts",
+      "upstream_sha256": "0f4adec47d7116f5c0332f893a0fcee8215fea906690d0f1713797c017917508",
+      "vendored_sha256": "e773d6a4a53b669ae52f3add7c7d88440b7b217df7ef7fabb1ebc705dda9533c",
+      "change": "import paths only"
+    }
+  ]
+}
