@@ -11,9 +11,10 @@ Intel Core i7-6850K, 32 GB DDR4, Windows 10, official CUDA 12.4 release binaries
 | Rank | Model | Correct | Core | Format | Wrong value | Truncated | Median latency | Median gen tok/s | Note |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 1 | [Qwen3-14B-Q4_K_M](rtx-4070-ti/Qwen3-14B-Q4_K_M/summary.md) | 135/135 (100.0%) | 120/120 | 0 | 0 | 0 | 0.96 s | 47.2 |  |
-| 2 | [Qwen3-Coder-30B-A3B-Instruct-Q4_K_M](rtx-4070-ti/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M/summary.md) | 130/135 (96.3%) | 115/120 | 0 | 5 | 0 | 3.27 s | 32.0 |  |
-| 3 | [gpt-oss-20b-MXFP4](rtx-4070-ti/gpt-oss-20b-MXFP4/summary.md) | 125/135 (92.6%) | 110/120 | 10 | 0 | 0 | 2.01 s | 68.2 | Same-build rerun. Earlier b9567 result: 124/135. |
-| 4 | [Qwen2.5-Coder-14B-Instruct-Q4_K_M](rtx-4070-ti/Qwen2.5-Coder-14B-Instruct-Q4_K_M/summary.md) | 0/135 (0.0%) | 0/120 | 135 | 0 | 0 | 1.34 s | 47.8 | Official 0/135. Lenient diagnostic 105/135. |
+| 2 | [Qwen3.5-9B-Q6_K](rtx-4070-ti/Qwen3.5-9B-Q6_K/summary.md) | 130/135 (96.3%) | 115/120 | 0 | 5 | 0 | 1.32 s | 57.6 | All 5 misses are in `bash_timeout`. |
+| 3 | [Qwen3-Coder-30B-A3B-Instruct-Q4_K_M](rtx-4070-ti/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M/summary.md) | 130/135 (96.3%) | 115/120 | 0 | 5 | 0 | 3.27 s | 32.0 |  |
+| 4 | [gpt-oss-20b-MXFP4](rtx-4070-ti/gpt-oss-20b-MXFP4/summary.md) | 125/135 (92.6%) | 110/120 | 10 | 0 | 0 | 2.01 s | 68.2 | Same-build rerun. Earlier b9567 result: 124/135. |
+| 5 | [Qwen2.5-Coder-14B-Instruct-Q4_K_M](rtx-4070-ti/Qwen2.5-Coder-14B-Instruct-Q4_K_M/summary.md) | 0/135 (0.0%) | 0/120 | 135 | 0 | 0 | 1.34 s | 47.8 | Official 0/135. Lenient diagnostic 105/135. |
 
 ## RTX 3060 Ti, 8 GB
 

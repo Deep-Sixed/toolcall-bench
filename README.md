@@ -10,7 +10,7 @@ Published comparisons:
 
 - [RTX 4070 Ti, 12 GB](published-results/2026-11-21/comparison.md): eight local GGUF models on llama.cpp b9567
 - [RTX 3060 Ti, 8 GB](published-results/2026-11-21-rtx-3060-ti/comparison.md): ten local GGUF models on llama.cpp b9862
-- [llama.cpp v1.0.0](published-results/2026-11-21-llama-v1.0.0/comparison.md): six new models plus a same-build GPT-OSS-20B rerun on both GPUs
+- [llama.cpp v1.0.0](published-results/2026-11-21-llama-v1.0.0/comparison.md): seven new models across both GPUs, plus a same-build GPT-OSS-20B rerun
 
 Each model folder contains its summary, run settings, and per-sample results. The two sets use different hardware and llama.cpp builds, so compare them with care. Latency and run time are specific to the test machine, and these results measure tool-call reliability only. See the [reproducibility guide](docs/REPRODUCING.md) for hardware, settings, and how to run the same tests.
 
