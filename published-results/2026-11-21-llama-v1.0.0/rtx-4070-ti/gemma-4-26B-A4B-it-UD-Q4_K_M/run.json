@@ -1,0 +1,31 @@
+{
+  "label": "gemma-4-26B-A4B-it-UD-Q4_K_M",
+  "model_path": "gemma-4-26B-A4B-it-UD-Q4_K_M.gguf",
+  "model_fingerprint": {
+    "size_bytes": 16947539744,
+    "partial_sha256": "535e78827341b68b0b7592d9c51255941cc98854cd447ee23a843c0f0bcbcf45"
+  },
+  "server": {
+    "build_info": "b12359-b1b770d90",
+    "model_path": "gemma-4-26B-A4B-it-UD-Q4_K_M.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "94899c0f917d93f6fe81c95744d1e8ddab2d21d39228d2e4aec1fb2a25bff413"
+  },
+  "started_at": "2026-11-22T04:15:22.313Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-22T04:21:25.797Z"
+}

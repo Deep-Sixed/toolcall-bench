@@ -16,7 +16,12 @@ Intel Core i7-6850K, 32 GB DDR4, Windows 10, official CUDA 12.4 release binaries
 | 4 | [Qwen3.5-9B-Q6_K](rtx-4070-ti/Qwen3.5-9B-Q6_K/summary.md) | 130/135 (96.3%) | 115/120 | 0 | 5 | 0 | 1.32 s | 57.6 | All 5 misses are in `bash_timeout`. |
 | 5 | [Qwen3-Coder-30B-A3B-Instruct-Q4_K_M](rtx-4070-ti/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M/summary.md) | 130/135 (96.3%) | 115/120 | 0 | 5 | 0 | 3.27 s | 32.0 |  |
 | 6 | [gpt-oss-20b-MXFP4](rtx-4070-ti/gpt-oss-20b-MXFP4/summary.md) | 125/135 (92.6%) | 110/120 | 10 | 0 | 0 | 2.01 s | 68.2 | Same-build rerun. Earlier b9567 result: 124/135. |
-| 7 | [Qwen2.5-Coder-14B-Instruct-Q4_K_M](rtx-4070-ti/Qwen2.5-Coder-14B-Instruct-Q4_K_M/summary.md) | 0/135 (0.0%) | 0/120 | 135 | 0 | 0 | 1.34 s | 47.8 | Official 0/135. Lenient diagnostic 105/135. |
+| 7 | [gemma-4-E2B-it-Q4_K_M](rtx-4070-ti/gemma-4-E2B-it-Q4_K_M/summary.md) | 118/135 (87.4%) | 118/120 | 17 | 0 | 0 | 0.28 s | 153.2 | Same-build rerun. Earlier b9567 result: 92/135. |
+| 8 | [gemma-4-31B-it-Q4_K_M](rtx-4070-ti/gemma-4-31B-it-Q4_K_M/summary.md) | 116/135 (85.9%) | 114/120 | 19 | 0 | 0 | 15.80 s | 3.1 | Same-build rerun. Earlier b9567 result: 106/135. Exceeds 12 GB VRAM. |
+| 9 | [gemma-4-E4B-it-Q4_K_M](rtx-4070-ti/gemma-4-E4B-it-Q4_K_M/summary.md) | 115/135 (85.2%) | 112/120 | 16 | 4 | 0 | 0.43 s | 97.9 | Same-build rerun. Earlier b9567 result: 99/135. |
+| 10 | [gemma-4-12b-it-Q4_K_M](rtx-4070-ti/gemma-4-12b-it-Q4_K_M/summary.md) | 113/135 (83.7%) | 110/120 | 21 | 1 | 0 | 0.83 s | 53.2 | Same-build rerun. Earlier b9567 result: 111/135. |
+| 11 | [gemma-4-26B-A4B-it-UD-Q4_K_M](rtx-4070-ti/gemma-4-26B-A4B-it-UD-Q4_K_M/summary.md) | 112/135 (83.0%) | 110/120 | 23 | 0 | 0 | 2.43 s | 31.2 | Same-build rerun. Earlier b9567 result: 100/135. |
+| 12 | [Qwen2.5-Coder-14B-Instruct-Q4_K_M](rtx-4070-ti/Qwen2.5-Coder-14B-Instruct-Q4_K_M/summary.md) | 0/135 (0.0%) | 0/120 | 135 | 0 | 0 | 1.34 s | 47.8 | Official 0/135. Lenient diagnostic 105/135. |
 
 ## RTX 3060 Ti, 8 GB
 
@@ -36,4 +41,6 @@ Intel Core i7-4930K, approximately 48 GiB DDR3, Linux, built from the v1.0.0 tag
 - **GPT-OSS-20B:** The same model file, template and settings scored 124/135 on b9567 and 125/135 on v1.0.0. One case changed outcome. Both runs fail all 10 parallel-call cases.
 - **Uncensored Qwen3.5 9B:** The same model file, template and settings scored 130/135 on b9567 and 135/135 on v1.0.0. Five cases changed from fail to pass. It differs from the official Qwen3.5 9B Q6_K in both fine-tuning and quantization, so this set does not show which difference explains their 5-case gap.
 - **Abliterated Qwen3 14B:** This community model and the official Qwen3 14B are both Q4_K_M and had the same outcome on all 135 cases. Its first-place rank comes from a 6 ms median-latency difference, which is too small to treat as a real speed advantage. The two GGUFs have different chat templates. This benchmark does not measure refusals, coding, reasoning or factual accuracy.
+- **Gemma reruns:** With the same model files, templates and settings, all five Gemma models scored higher on v1.0.0 than on b9567: E2B 92 to 118, E4B 99 to 115, 12B 111 to 113, 26B 100 to 112 and 31B 106 to 116. Nearly all gains were schema violations that became passes, mostly from required keys now being present. llama.cpp rewrote its Gemma 4 tool-argument parser shortly before v1.0.0, which is the likely cause, but individual commits were not bisected. A required key can also be filled with a value the request did not give.
+- **Qwen3.6 35B:** This model was not rerun on v1.0.0, so its 131/135 remains a [b9567 result](../2026-11-21/comparison.md).
 - **Comparing sets:** Scores and timings in this set should not be treated as directly comparable with the [b9567](../2026-11-21/comparison.md) or [b9862](../2026-11-21-rtx-3060-ti/comparison.md) sets. The two GPUs here also differ in CPU, memory and operating system.
