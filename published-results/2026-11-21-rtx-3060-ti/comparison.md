@@ -23,4 +23,4 @@ Every timeout, truncation and server failure remains in the denominator. No mode
 
 This set uses llama.cpp b9862, unlike the [RTX 4070 Ti results](../2026-11-21/comparison.md) on b9567; do not treat latency across the two sets as directly comparable. Scores depend on model quantization, runtime, chat template and tool parser; one seeded run does not establish general coding or reasoning ability.
 
-`Tiny3.5-Coder-500M-F16` produced no parsed tool calls. Its first sample returned JSON-like tool-call text as plain text, so its 0% may reflect chat-template or parser compatibility rather than model ability.
+`Tiny3.5-Coder-500M-F16` scored 0/135 because it did not use the required tool-call format. Its chat template supplied the tools and requested `<tool_call>` tags, but the model returned JSON as plain text, so `llama-server` correctly reported no tool calls. As a separate diagnostic, extracting call-shaped JSON from its saved text would score 64/135 (47.4%), or 64/120 (53.3%) on the core set. That lenient result is not its official score.
