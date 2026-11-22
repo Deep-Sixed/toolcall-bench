@@ -1,0 +1,31 @@
+{
+  "label": "Qwen3-4B-Instruct-2507-UD-Q4_K_XL",
+  "model_path": "Qwen3-4B-Instruct-2507-UD-Q4_K_XL.gguf",
+  "model_fingerprint": {
+    "size_bytes": 2546340960,
+    "partial_sha256": "ab2315e2489563fe9856c86496377d1712f5168112f522f2e7fb0c3be9ea5915"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "Qwen3-4B-Instruct-2507-UD-Q4_K_XL.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18"
+  },
+  "started_at": "2026-11-22T05:23:12.695Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-22T05:24:23.654Z"
+}

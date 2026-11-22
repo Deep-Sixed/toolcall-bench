@@ -1,0 +1,31 @@
+{
+  "label": "Qwen3.5-2B-Uncensored-HauhauCS-Aggressive-BF16",
+  "model_path": "Qwen3.5-2B-Uncensored-HauhauCS-Aggressive-BF16.gguf",
+  "model_fingerprint": {
+    "size_bytes": 3775708640,
+    "partial_sha256": "aaf103222ef31a315bf96fa58480daa08961cd9e7d98dd0cc00a4e972b04941c"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "Qwen3.5-2B-Uncensored-HauhauCS-Aggressive-BF16.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80"
+  },
+  "started_at": "2026-11-22T05:28:27.708Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-22T05:30:25.809Z"
+}

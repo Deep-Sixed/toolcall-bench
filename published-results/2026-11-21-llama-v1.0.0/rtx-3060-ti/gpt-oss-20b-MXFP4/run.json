@@ -1,0 +1,31 @@
+{
+  "label": "gpt-oss-20b-MXFP4",
+  "model_path": "gpt-oss-20b-MXFP4.gguf",
+  "model_fingerprint": {
+    "size_bytes": 12109565632,
+    "partial_sha256": "1d0c11ffeb03e2d7d0ca4a6d308f84a9244f8db495ebebec507f737263c432dc"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "gpt-oss-20b-MXFP4.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "7d1a01906c5890d018c7605b04d6730986216f70427ad02d19439cf21fa78ffc"
+  },
+  "started_at": "2026-11-22T05:31:26.936Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-22T05:44:23.673Z"
+}
