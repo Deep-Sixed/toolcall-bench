@@ -15,6 +15,21 @@ This guide lets you run the same tool-call suite on your own GPU and compare res
 | Node.js | 22.22.3 |
 | Upstream cases | `toolcall_formats` at `e5db81bf92d7ebb93833080d796071a79d93ff06` |
 
+## Second published setup
+
+| Item | Value |
+|---|---|
+| GPU | NVIDIA GeForce RTX 3060 Ti, 8 GB |
+| NVIDIA driver | 610.43.02 |
+| CPU | Intel Core i7-4930K, 6 cores / 12 threads, AVX |
+| Memory | 45 GB usable DDR3-1333 |
+| Operating system | Ubuntu 26.04.1 LTS |
+| llama.cpp | `llama-server` b9862 (`5f83fbbe7`), CUDA AVX build |
+| Node.js | 26.3.1 |
+| Upstream cases | `toolcall_formats` at `e5db81bf92d7ebb93833080d796071a79d93ff06` |
+
+A small embedding model stayed loaded on this GPU during the run, using about 208 MiB of VRAM.
+
 ## Inference settings
 
 | Setting | Value |

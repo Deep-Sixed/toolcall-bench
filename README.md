@@ -6,7 +6,12 @@ It needs Node.js 22.18 or newer and has no npm dependencies.
 
 ## Results
 
-The [2026-11-21 comparison](published-results/2026-11-21/comparison.md) covers eight local GGUF models on llama.cpp build b9567. Each model folder contains its summary, run settings, and per-sample results. Latency and run time are specific to the test machine, and these results measure tool-call reliability only. See the [reproducibility guide](docs/REPRODUCING.md) for hardware, settings, and how to run the same tests.
+Published comparisons:
+
+- [RTX 4070 Ti, 12 GB](published-results/2026-11-21/comparison.md): eight local GGUF models on llama.cpp b9567
+- [RTX 3060 Ti, 8 GB](published-results/2026-11-21-rtx-3060-ti/comparison.md): ten local GGUF models on llama.cpp b9862
+
+Each model folder contains its summary, run settings, and per-sample results. The two sets use different hardware and llama.cpp builds, so compare them with care. Latency and run time are specific to the test machine, and these results measure tool-call reliability only. See the [reproducibility guide](docs/REPRODUCING.md) for hardware, settings, and how to run the same tests.
 
 ## Run
 
