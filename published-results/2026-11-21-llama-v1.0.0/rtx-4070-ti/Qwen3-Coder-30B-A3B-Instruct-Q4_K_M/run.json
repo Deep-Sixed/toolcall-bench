@@ -1,0 +1,31 @@
+{
+  "label": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+  "model_path": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+  "model_fingerprint": {
+    "size_bytes": 18556689568,
+    "partial_sha256": "7f9ed0c15d0e61332585b13581427b278265bbe230267ce0766aa66eb5ebcc78"
+  },
+  "server": {
+    "build_info": "b12359-b1b770d90",
+    "model_path": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "87710339d25b4e789c1d723f93c91ee861a86d305bb3d20a845536f251d6ea8a"
+  },
+  "started_at": "2026-11-22T01:41:15.233Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-22T01:49:44.548Z"
+}

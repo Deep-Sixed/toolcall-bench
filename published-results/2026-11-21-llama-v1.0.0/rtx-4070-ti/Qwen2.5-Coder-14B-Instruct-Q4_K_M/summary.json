@@ -1,0 +1,149 @@
+{
+  "total": 135,
+  "passed": 0,
+  "pass_rate": 0,
+  "complete": true,
+  "failures": {
+    "format": 135,
+    "wrong_value": 0,
+    "truncated": 0,
+    "infrastructure": 0
+  },
+  "categories": {
+    "no_tool_call": 135
+  },
+  "by_variant": {
+    "omitted": {
+      "passed": 0,
+      "total": 27
+    },
+    "anyof_null": {
+      "passed": 0,
+      "total": 27
+    },
+    "anyof_null_strict": {
+      "passed": 0,
+      "total": 27
+    },
+    "type_array_null": {
+      "passed": 0,
+      "total": 27
+    },
+    "type_array_null_strict": {
+      "passed": 0,
+      "total": 27
+    }
+  },
+  "by_scenario": {
+    "read_slice": {
+      "passed": 0,
+      "total": 5
+    },
+    "read_whole": {
+      "passed": 0,
+      "total": 5
+    },
+    "bash_timeout": {
+      "passed": 0,
+      "total": 5
+    },
+    "bash_plain": {
+      "passed": 0,
+      "total": 5
+    },
+    "parallel_reads": {
+      "passed": 0,
+      "total": 5
+    },
+    "thermostat_full": {
+      "passed": 0,
+      "total": 5
+    },
+    "thermostat_minimal": {
+      "passed": 0,
+      "total": 5
+    },
+    "ticket_full": {
+      "passed": 0,
+      "total": 5
+    },
+    "ticket_minimal": {
+      "passed": 0,
+      "total": 5
+    },
+    "label_array": {
+      "passed": 0,
+      "total": 5
+    },
+    "label_weights": {
+      "passed": 0,
+      "total": 5
+    },
+    "scores_numbers": {
+      "passed": 0,
+      "total": 5
+    },
+    "meeting_nested": {
+      "passed": 0,
+      "total": 5
+    },
+    "meeting_no_location": {
+      "passed": 0,
+      "total": 5
+    },
+    "transfer_decimal": {
+      "passed": 0,
+      "total": 5
+    },
+    "weather_negative": {
+      "passed": 0,
+      "total": 5
+    },
+    "parallel_weather": {
+      "passed": 0,
+      "total": 5
+    },
+    "write_json_content": {
+      "passed": 0,
+      "total": 5
+    },
+    "write_unicode_content": {
+      "passed": 0,
+      "total": 5
+    },
+    "scale_integer_enum": {
+      "passed": 0,
+      "total": 5
+    },
+    "no_arguments": {
+      "passed": 0,
+      "total": 5
+    },
+    "read_omit_requested": {
+      "passed": 0,
+      "total": 5
+    },
+    "bash_omit_requested": {
+      "passed": 0,
+      "total": 5
+    },
+    "ticket_omit_requested": {
+      "passed": 0,
+      "total": 5
+    },
+    "read_wrong_type_requested": {
+      "passed": 0,
+      "total": 5
+    },
+    "bash_wrong_type_requested": {
+      "passed": 0,
+      "total": 5
+    },
+    "ticket_wrong_type_requested": {
+      "passed": 0,
+      "total": 5
+    }
+  },
+  "median_latency_ms": 1339,
+  "median_generation_tokens_per_second": 47.84695182587848
+}
