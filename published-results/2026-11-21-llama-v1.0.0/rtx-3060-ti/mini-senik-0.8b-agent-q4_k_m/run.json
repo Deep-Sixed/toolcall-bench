@@ -1,0 +1,31 @@
+{
+  "label": "mini-senik-0.8b-agent-q4_k_m",
+  "model_path": "mini-senik-0.8b-agent-q4_k_m.gguf",
+  "model_fingerprint": {
+    "size_bytes": 534701824,
+    "partial_sha256": "dd7bec60f2d40b8f1326798d587741d8a1b185cb6c8b64dcd98279c8ecea78e7"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "mini-senik-0.8b-agent-q4_k_m.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "6d877b321d680a20c0778b676dda2eb686f641ec47ad1ebaa9e53044dc8a1399"
+  },
+  "started_at": "2026-11-23T21:03:29.787Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-23T21:04:15.473Z"
+}
