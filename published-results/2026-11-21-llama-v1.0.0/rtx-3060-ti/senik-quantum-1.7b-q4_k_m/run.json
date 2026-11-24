@@ -1,0 +1,31 @@
+{
+  "label": "senik-quantum-1.7b-q4_k_m",
+  "model_path": "senik-quantum-1.7b-q4_k_m.gguf",
+  "model_fingerprint": {
+    "size_bytes": 1099627040,
+    "partial_sha256": "1390c591597738d4e6acb7d7a9c27a918304d37151f3af24f405d86b339faf8b"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "senik-quantum-1.7b-q4_k_m.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "48ab0f7e16b7e5bf7751c5c1f9a011ff4b36bf1bbed0790a1cea2aec89295d3b"
+  },
+  "started_at": "2026-11-24T01:40:51.419Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-24T01:41:33.508Z"
+}
