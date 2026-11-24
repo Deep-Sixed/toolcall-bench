@@ -1,0 +1,31 @@
+{
+  "label": "senik-dense-2b-q4_k_m",
+  "model_path": "senik-dense-2b-q4_k_m.gguf",
+  "model_fingerprint": {
+    "size_bytes": 1561314528,
+    "partial_sha256": "ae139bfdefd848145a975b79fd97f957f6219f38e6deefd47dd1a50c645dc2c1"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "senik-dense-2b-q4_k_m.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "86d92dc38bc4ce4564b3432cbf64ba494d488c69e2360ceb2cd1c2f7a6e5962c"
+  },
+  "started_at": "2026-11-24T01:27:24.409Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-24T01:28:08.401Z"
+}
