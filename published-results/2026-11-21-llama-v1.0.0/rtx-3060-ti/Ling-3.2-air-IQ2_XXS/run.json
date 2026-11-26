@@ -1,0 +1,31 @@
+{
+  "label": "Ling-3.2-air-IQ2_XXS",
+  "model_path": "Ling-3.2-air-IQ2_XXS.gguf",
+  "model_fingerprint": {
+    "size_bytes": 38425167168,
+    "partial_sha256": "c3e0efde91474050b22a05fa47bb8b7543d2f1e9dc4c170e488d9ddeb872235b"
+  },
+  "server": {
+    "build_info": "b1-b1b770d",
+    "model_path": "Ling-3.2-air-IQ2_XXS.gguf",
+    "n_ctx": 8192,
+    "chat_template_sha256": "40f6e1e9b7a954474ae1c189a9122666dde9d9e44d57f95640e0f55dde0aea34"
+  },
+  "started_at": "2026-11-26T16:20:09.513Z",
+  "settings": {
+    "ctx": 8192,
+    "max_tokens": 1024,
+    "reasoning": "off",
+    "seed": 42,
+    "temperature": 0,
+    "timeout_ms": 180000,
+    "cache_prompt": false,
+    "parallel_tool_calls": true
+  },
+  "upstream": {
+    "repository": "https://github.com/OpenRouterTeam/benchmark-harness",
+    "commit": "e5db81bf92d7ebb93833080d796071a79d93ff06"
+  },
+  "sample_count": 135,
+  "finished_at": "2026-11-26T17:19:20.995Z"
+}
